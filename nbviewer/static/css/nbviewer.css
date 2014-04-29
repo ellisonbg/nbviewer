@@ -34,18 +34,41 @@ h3.section-heading {
   text-align: center;
 }
 
-
-
-input#main-input {
-    /* This matches the width of the Go button to properly center things */
-    margin-left: -25px;
+.go-form {
+  width: 100%;
 }
+
+.go-controls {
+  width: 100%;
+}
+
+.go-input {
+  width: 87%;
+}
+
 
 @media (min-width: 768px){
     .menu-text{
         display:none
     }
 }
+
+@media (max-width: 767px) {
+  input.go-input {
+    width: 97%;
+  }
+  button.go-button {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .jumbotron button.go-button.btn {
+    width: 95%;
+    display: none;
+  }
+}
+
 pre, code {
     /* restore default mono font */
     font-family: monospace;
